@@ -1,0 +1,110 @@
+.sidebar {
+    position: relative;
+    width: 25rem;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow: auto;
+
+    background-color: #fff;
+    //transition: all 2s ease;
+
+    &_hidden {
+        position: relative;
+        transform: translateX(-35rem);
+       // transition: all 2s ease;
+
+        width: 0rem;
+        height: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #fff;
+
+
+    }
+
+    &__btn {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3rem;
+        height: 3rem;
+        background-color: blue;
+        border: none;
+        border-top-right-radius: 1rem;
+        color: #fff ;
+       // transition: all 1.8s ease;
+
+        &_hidden {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(34rem);
+            width: 3rem;
+            height: 3rem;
+            background-color: blue;
+            border: none;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            color: #fff ;
+            //transition: all 2s ease;
+        }
+    }
+
+    &__title {
+        font-size: 1.9rem;
+        letter-spacing: 0.6rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 2.4rem;
+    }
+
+
+}
+
+.link__dropdown {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.link__dropdown-qual {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem 0 2rem;
+    font-size: 1.8rem;
+
+    &_hidden {
+        display: none;
+    }
+}
+
+.link {
+    &_active {
+        font-weight: 700;
+    }
+}
+
+.link-draw {
+    &_active {
+        font-weight: 700;
+    }
+}

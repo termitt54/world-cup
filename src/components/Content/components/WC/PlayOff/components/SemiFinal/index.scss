@@ -1,0 +1,91 @@
+.semi {
+    position: absolute;
+    top: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "game1 game2";
+
+    &__game {
+        width: 16rem;
+        height: 6rem;
+        padding: 1rem;
+        box-shadow: 0 0 5px brown;
+        border-radius: 2rem;
+
+
+        &1 {
+            grid-area: game1;
+      
+            .teamone {
+              .game__flag {
+                border-top-left-radius: 2rem;
+                border-bottom-left-radius: 0;
+              }
+            }
+            .teamtwo {
+              .game__flag {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 2rem;
+              }
+            }
+            .score {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              border-top-right-radius: 2rem;
+              border-bottom-right-radius: 2rem;
+              font-size: 2.4rem;
+              font-weight: 700;
+              color: white;
+              padding: 0.3rem 0.3rem 0.3rem 0;
+            }
+          }
+          &2 {
+            grid-area: game2;
+            justify-self: end;
+      
+            .teamone {
+              grid-column: 2;
+              flex-direction: row-reverse;
+      
+              .game__flag {
+                border-top-right-radius: 2rem;
+                border-bottom-right-radius: 0;
+              }
+            }
+            .teamtwo {
+              grid-column: 2;
+              flex-direction: row-reverse;
+              .game__flag {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 2rem;
+              }
+            }
+            .score {
+              grid-column: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              border-top-left-radius: 2rem;
+              border-bottom-left-radius: 2rem;
+              font-size: 2.4rem;
+              font-weight: 700;
+              color: white;
+              padding: 0.3rem 0 0.3rem 0.6rem;
+            }
+            .game__flag {
+              margin-left: 0.5rem;
+              margin-right: 0;
+            }
+          }
+    }
+}

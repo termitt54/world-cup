@@ -1,0 +1,41 @@
+.play-off {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .teamone {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 13rem;
+    grid-area: team1;
+    border-bottom: 0.1px solid lightgray;
+  }
+  .teamtwo {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 13rem;
+    grid-area: team2;
+  }
+  .score {
+    grid-area: score;
+    width: 3rem;
+    background-color: brown;
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+  }
+  .game__flag {
+    width: 4rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px black;
+  }
+}

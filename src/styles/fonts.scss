@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Pobeda';
+	src: local('Pobeda Bold'), local('Pobeda-Bold'),
+		url('../fonts/Pobeda-Bold.eot') format('embedded-opentype'),
+		url('../fonts/Pobeda-Bold.woff') format('woff'),
+		url('../fonts/Pobeda-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pobeda';
+	src: local('Pobeda Regular'), local('Pobeda-Regular'),
+		url('../fonts/Pobeda-Regular.eot') format('embedded-opentype'),
+		url('../fonts/Pobeda-Regular.woff') format('woff'),
+		url('../fonts/Pobeda-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

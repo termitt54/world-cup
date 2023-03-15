@@ -1,0 +1,60 @@
+.europe {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+
+  box-shadow: 0 0 5px black;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  &__table {
+    width: 100%;
+    max-width: 40rem;
+
+    box-shadow: 0 0 5px black;
+
+    thead:nth-child(2),
+    thead:nth-child(3),
+    thead:nth-child(4),
+    thead:nth-child(5),
+    thead:nth-child(6),
+    thead:nth-child(7),
+    thead:nth-child(8),
+    thead:nth-child(9) {
+      background-color: lightgreen;
+    }
+
+    thead:nth-child(10),
+    thead:nth-child(11),
+    thead:nth-child(12) {
+      background-color: lightcoral;
+    }
+  }
+
+  &__games {
+    display: flex;
+  }
+
+  &__semi-final {
+    display: flex;
+    flex-direction: row;
+
+    .matches {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+
+  &__final {
+    display: flex;
+    flex-direction: row;
+
+    .matches {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+}

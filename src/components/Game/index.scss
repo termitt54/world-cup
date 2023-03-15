@@ -1,0 +1,107 @@
+.game {
+  display: none;
+
+  &_active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 666666666666666;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 50rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+  }
+}
+
+.igra {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "team1 score"
+    "team2 score";
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px black;
+  border-radius: 1rem;
+
+  &__teamone,
+  &__teamtwo {
+    width: 35rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+
+  &__teamone {
+    grid-area: team1;
+  }
+
+  &__teamtwo {
+    grid-area: team2;
+  }
+
+  &__score {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 4rem;
+    grid-area: score;
+
+    input {
+      font-size: 2.5rem;
+      font-weight: 700;
+      border: none;
+      border-bottom: 1px solid black;
+      font-family: "Pobeda";
+      outline: none;
+    }
+  }
+
+  &__flag {
+    width: 100%;
+    max-width: 6rem;
+    height: 3rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+
+  button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Pobeda";
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: lightblue;
+
+    &:active {
+      background-color: blue;
+    }
+  }
+}

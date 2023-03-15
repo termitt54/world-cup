@@ -1,0 +1,107 @@
+.world-cup {
+  width: 100%;
+  height: 100%;
+  .group-stage {
+    width: 100%;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "group1 shedule group2"
+      "group3 shedule group4"
+      "group5 shedule group6"
+      "group7 shedule group8";
+
+    
+    &__shedule {
+        grid-area: shedule;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 4rem;
+
+        .tour__match {
+            height: 2rem;
+        }
+
+        .tour__score {
+            font-size: 2.2rem;
+        }
+
+        .tour__flag {
+            max-width: 3.5rem;
+            height: 2.5rem;
+        }
+    }  
+    .group {
+      max-width: 38rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 5px brown;
+      font-weight: 700;
+
+
+    thead {
+        text-align: center;
+        background-color: brown;
+        color: white;
+    }
+
+      &__num {
+        text-align: center;
+        width: 1.5rem;
+      }
+
+      &__goals {
+        text-align: center;
+        width: 1.5rem;
+      }
+
+      &__flag {
+        width: 3rem;
+        height: 2rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 1.8rem;
+        border-bottom-right-radius: 1.8rem;
+        margin-right: 1rem;
+        box-shadow: 0 0 1px black;
+      }
+
+      &__text { 
+        width: 18rem;
+        display: flex;
+        align-items: center;
+      }
+
+      &1 {
+        grid-area: group1;
+      }
+      &2 {
+        grid-area: group2;
+        justify-self: end;
+      }
+      &3 {
+        grid-area: group3;
+      }
+      &4 {
+        grid-area: group4;
+        justify-self: end;
+      }
+      &5 {
+        grid-area: group5;
+      }
+      &6 {
+        grid-area: group6;
+        justify-self: end;
+      }
+      &7 {
+        grid-area: group7;
+      }
+      &8 {
+        grid-area: group8;
+        justify-self: end;
+      }
+    }
+  }
+}

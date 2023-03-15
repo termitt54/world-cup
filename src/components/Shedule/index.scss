@@ -1,0 +1,110 @@
+.shedule {
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+
+  &__groups {
+    display: flex;
+    flex-direction: column;
+    height: 17rem;
+    flex-wrap: wrap;
+  }
+
+  &__tour {
+    display: flex;
+    justify-content: space-between;
+    width: 38rem;
+    height: 3rem;
+    box-shadow: 0 0 1px black;
+    border-radius: 1rem;
+  }
+}
+
+.tour {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 5rem;
+    font-weight: 700;
+  }
+  &__match {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18.5rem;
+    height: 3rem;
+    gap: 2rem;
+  }
+
+  &__score {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2.4rem;
+    
+    box-shadow: 0 0 5px black;
+    border-radius: 2rem;
+    padding: 0 0.3rem;
+
+    &-green {
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 2.4rem;
+        
+        box-shadow: 0 0 5px black;
+        border-radius: 2rem;
+        padding: 0 0.3rem;
+        background-color: green;
+        color: white;
+    }
+  }
+
+  &__flag {
+    width: 100%;
+    max-width: 3.5rem;
+    height: 2.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 0 0 1px black;
+  }
+
+  &__teamone,
+  &__teamtwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.generator {
+  width: 20rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+
+  border: none;
+  border-radius: 1rem;
+  background-color: lightcoral;
+  font-family: 'Pobeda';
+  font-weight: 700;
+  cursor: pointer;
+
+  &:active {
+    background-color: blue;
+  }
+}
